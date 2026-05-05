@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>백엔드 취업 로드맵 — 김동현</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      padding: 40px 24px;
+      min-height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .header h1 span { color: #58a6ff; }
+    .header p { color: #8b949e; font-size: 14px; }
+
+    /* 목표 회사 */
+    .targets {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+    .target-badge {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid;
+    }
+
+    /* 핵심 스택 */
+    .stack-section {
+      max-width: 860px;
+      margin: 0 auto 48px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #8b949e;
+      margin-bottom: 16px;
+      padding-left: 4px;
+    }
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .stack-item {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+    }
+    .stack-item .priority {
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 10px;
+      margin-left: auto;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .p1 { background: #1f3a1f; color: #3fb950; border: 1px solid #238636; }
+    .p2 { background: #1f2d3d; color: #58a6ff; border: 1px solid #1f6feb; }
+    .p3 { background: #2d2416; color: #d29922; border: 1px solid #9e6a03; }
+
+    /* 타임라인 */
+    .timeline {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .phase {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 0;
+      margin-bottom: 0;
+    }
+
+    /* 왼쪽 월 라벨 */
+    .phase-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .month-badge {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      border: 2px solid;
+      flex-shrink: 0;
+    }
+    .phase-connector {
+      width: 2px;
+      flex: 1;
+      min-height: 24px;
+      margin-top: 4px;
+    }
+
+    /* 오른쪽 카드 */
+    .phase-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 8px 0 16px 0;
+      transition: border-color 0.2s;
+    }
+    .phase-card:hover { border-color: #58a6ff44; }
+
+    .phase-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .phase-icon { font-size: 20px; }
+    .phase-title { font-size: 16px; font-weight: 700; }
+    .phase-sub { font-size: 12px; color: #8b949e; margin-left: auto; }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+    }
+    .topic {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #c9d1d9;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: #0d1117;
+      border: 1px solid #21262d;
+    }
+    .topic-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .xp-bar-wrap {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .xp-label { font-size: 12px; color: #8b949e; white-space: nowrap; }
+    .xp-bar {
+      flex: 1;
+      height: 6px;
+      background: #21262d;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .xp-fill {
+      height: 100%;
+      border-radius: 10px;
+    }
+    .xp-value { font-size: 12px; font-weight: 700; white-space: nowrap; }
+
+    /* 색상 테마 per phase */
+    .c1 { color: #79c0ff; border-color: #1f6feb; }
+    .c1-bg { background: #1f6feb22; }
+    .c1-dot { background: #79c0ff; }
+    .c1-fill { background: linear-gradient(90deg, #1f6feb, #79c0ff); }
+    .c1-conn { background: #1f6feb44; }
+
+    .c2 { color: #3fb950; border-color: #238636; }
+    .c2-bg { background: #23863622; }
+    .c2-dot { background: #3fb950; }
+    .c2-fill { background: linear-gradient(90deg, #238636, #3fb950); }
+    .c2-conn { background: #23863644; }
+
+    .c3 { color: #d29922; border-color: #9e6a03; }
+    .c3-bg { background: #9e6a0322; }
+    .c3-dot { background: #d29922; }
+    .c3-fill { background: linear-gradient(90deg, #9e6a03, #d29922); }
+    .c3-conn { background: #9e6a0344; }
+
+    .c4 { color: #f78166; border-color: #da3633; }
+    .c4-bg { background: #da363322; }
+    .c4-dot { background: #f78166; }
+    .c4-fill { background: linear-gradient(90deg, #da3633, #f78166); }
+    .c4-conn { background: #da363344; }
+
+    .c5 { color: #bc8cff; border-color: #8957e5; }
+    .c5-bg { background: #8957e522; }
+    .c5-dot { background: #bc8cff; }
+    .c5-fill { background: linear-gradient(90deg, #8957e5, #bc8cff); }
+    .c5-conn { background: #8957e544; }
+
+    .c6 { color: #ff7b72; border-color: #ff7b72; }
+    .c6-bg { background: #ff7b7222; }
+    .c6-dot { background: #ff7b72; }
+    .c6-fill { background: linear-gradient(90deg, #b62324, #ff7b72); }
+    .c6-conn { background: #ff7b7244; }
+
+    /* 레벨 요약 */
+    .level-summary {
+      max-width: 860px;
+      margin: 32px auto 0;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    .level-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .level-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
+      min-width: 80px;
+    }
+    .level-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #0d1117;
+      border: 2px solid #30363d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: #8b949e;
+    }
+    .level-circle.active {
+      border-color: #58a6ff;
+      color: #58a6ff;
+      background: #1f6feb22;
+    }
+    .level-circle.goal {
+      border-color: #3fb950;
+      color: #3fb950;
+      background: #23863622;
+    }
+    .level-arrow {
+      color: #30363d;
+      font-size: 16px;
+      flex-shrink: 0;
+      padding-bottom: 20px;
+    }
+    .level-label { font-size: 10px; color: #8b949e; text-align: center; }
+
+    .daily-routine {
+      max-width: 860px;
+      margin: 16px auto 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .routine-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .routine-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .routine-item {
+      font-size: 12px;
+      color: #8b949e;
+      padding: 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .routine-item::before { content: '→'; color: #30363d; }
+
+    @media (max-width: 600px) {
+      .phase { grid-template-columns: 80px 1fr; }
+      .topics { grid-template-columns: 1fr; }
+      .stack-grid { grid-template-columns: 1fr 1fr; }
+      .daily-routine { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🚀 백엔드 엔지니어 <span>취업 로드맵</span></h1>
+    <p>2026.05 – 2026.10 &nbsp;|&nbsp; Java / Spring Boot &nbsp;|&nbsp; 6개월 플랜</p>
+  </div>
+
+  <!-- 목표 회사 -->
+  <div class="targets">
+    <span class="target-badge" style="color:#58a6ff;border-color:#1f6feb;background:#1f6feb18">🏠 오늘의집</span>
+    <span class="target-badge" style="color:#3fb950;border-color:#238636;background:#23863618">👟 무신사</span>
+    <span class="target-badge" style="color:#d29922;border-color:#9e6a03;background:#9e6a0318">🥬 컬리</span>
+    <span class="target-badge" style="color:#bc8cff;border-color:#8957e5;background:#8957e518">💄 올리브영</span>
+    <span class="target-badge" style="color:#f78166;border-color:#da3633;background:#da363318">🛵 배달의민족</span>
+  </div>
+
+  <!-- 핵심 스택 -->
+  <div class="stack-section">
+    <div class="section-title">공통 핵심 기술 스택</div>
+    <div class="stack-grid">
+      <div class="stack-item">☕ Java / Kotlin<span class="priority p1">★★★ 필수</span></div>
+      <div class="stack-item">🍃 Spring Boot<span class="priority p1">★★★ 필수</span></div>
+      <div class="stack-item">🗄️ MySQL / RDB<span class="priority p1">★★★ 필수</span></div>
+      <div class="stack-item">🔴 Redis<span class="priority p1">★★★ 필수</span></div>
+      <div class="stack-item">🌐 REST API<span class="priority p1">★★★ 필수</span></div>
+      <div class="stack-item">📨 Kafka<span class="priority p2">★★☆ 중요</span></div>
+      <div class="stack-item">🏗️ MSA<span class="priority p2">★★☆ 중요</span></div>
+      <div class="stack-item">☁️ AWS<span class="priority p2">★★☆ 중요</span></div>
+      <div class="stack-item">🐳 Docker / K8s<span class="priority p2">★★☆ 중요</span></div>
+      <div class="stack-item">🔐 OAuth2 / JWT<span class="priority p3">★☆☆ 우대</span></div>
+      <div class="stack-item">⚡ gRPC<span class="priority p3">★☆☆ 우대</span></div>
+      <div class="stack-item">🤖 AI 통합<span class="priority p3">★☆☆ 우대</span></div>
+    </div>
+  </div>
+
+  <!-- 타임라인 -->
+  <div class="timeline">
+    <div class="section-title">월별 학습 로드맵</div>
+
+    <!-- Phase 1 -->
+    <div class="phase">
+      <div class="phase-left">
+        <div class="month-badge c1">1월차</div>
+        <div class="phase-connector c1-conn"></div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-icon">☕</span>
+          <span class="phase-title">Java / Spring Boot 기초 정립</span>
+          <span class="phase-sub">May 2026</span>
+        </div>
+        <div class="topics">
+          <div class="topic"><div class="topic-dot c1-dot"></div>JVM & GC 동작 원리</div>
+          <div class="topic"><div class="topic-dot c1-dot"></div>OOP 4대 원칙 & SOLID</div>
+          <div class="topic"><div class="topic-dot c1-dot"></div>Spring IoC / DI / Bean 생명주기</div>
+          <div class="topic"><div class="topic-dot c1-dot"></div>Spring AOP & 프록시 패턴</div>
+          <div class="topic"><div class="topic-dot c1-dot"></div>@Transactional 전파 수준</div>
+          <div class="topic"><div class="topic-dot c1-dot"></div>Spring MVC 요청 흐름</div>
+          <div class="topic"><div class="topic-dot c1-dot"></div>예외 처리 전략</div>
+          <div class="topic"><div class="topic-dot c1-dot"></div>JPA 기초 & N+1 문제</div>
+        </div>
+        <div class="xp-bar-wrap">
+          <span class="xp-label">목표 XP</span>
+          <div class="xp-bar"><div class="xp-fill c1-fill" style="width:100%"></div></div>
+          <span class="xp-value" style="color:#79c0ff">+120 XP → Lv.2</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="phase">
+      <div class="phase-left">
+        <div class="month-badge c2">2월차</div>
+        <div class="phase-connector c2-conn"></div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-icon">🗄️</span>
+          <span class="phase-title">DB 심화 & API 설계</span>
+          <span class="phase-sub">Jun 2026</span>
+        </div>
+        <div class="topics">
+          <div class="topic"><div class="topic-dot c2-dot"></div>인덱스 B-Tree & 복합 인덱스</div>
+          <div class="topic"><div class="topic-dot c2-dot"></div>ACID & 트랜잭션 격리 수준 4가지</div>
+          <div class="topic"><div class="topic-dot c2-dot"></div>N+1 해결 (Fetch Join, BatchSize)</div>
+          <div class="topic"><div class="topic-dot c2-dot"></div>샤딩 & 파티셔닝 & 복제</div>
+          <div class="topic"><div class="topic-dot c2-dot"></div>Redis 자료구조 5가지</div>
+          <div class="topic"><div class="topic-dot c2-dot"></div>캐싱 전략 3가지 & 무효화</div>
+          <div class="topic"><div class="topic-dot c2-dot"></div>REST API 설계 & 멱등성</div>
+          <div class="topic"><div class="topic-dot c2-dot"></div>gRPC + Protobuf 기초</div>
+        </div>
+        <div class="xp-bar-wrap">
+          <span class="xp-label">목표 XP</span>
+          <div class="xp-bar"><div class="xp-fill c2-fill" style="width:100%"></div></div>
+          <span class="xp-value" style="color:#3fb950">+150 XP → Lv.3</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="phase">
+      <div class="phase-left">
+        <div class="month-badge c3">3월차</div>
+        <div class="phase-connector c3-conn"></div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-icon">🏗️</span>
+          <span class="phase-title">아키텍처 & Kafka</span>
+          <span class="phase-sub">Jul 2026</span>
+        </div>
+        <div class="topics">
+          <div class="topic"><div class="topic-dot c3-dot"></div>MSA vs 모놀리식 트레이드오프</div>
+          <div class="topic"><div class="topic-dot c3-dot"></div>API Gateway & 서비스 디스커버리</div>
+          <div class="topic"><div class="topic-dot c3-dot"></div>Kafka Topic / Partition / Consumer Group</div>
+          <div class="topic"><div class="topic-dot c3-dot"></div>이벤트 기반 아키텍처 패턴</div>
+          <div class="topic"><div class="topic-dot c3-dot"></div>Backpressure & 비동기 처리</div>
+          <div class="topic"><div class="topic-dot c3-dot"></div>CAP 정리 & 최종 일관성</div>
+          <div class="topic"><div class="topic-dot c3-dot"></div>수평/수직 확장 & 로드밸런서</div>
+          <div class="topic"><div class="topic-dot c3-dot"></div>시스템 설계 실전 스케치</div>
+        </div>
+        <div class="xp-bar-wrap">
+          <span class="xp-label">목표 XP</span>
+          <div class="xp-bar"><div class="xp-fill c3-fill" style="width:100%"></div></div>
+          <span class="xp-value" style="color:#d29922">+150 XP → Lv.4</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 4 -->
+    <div class="phase">
+      <div class="phase-left">
+        <div class="month-badge c4">4월차</div>
+        <div class="phase-connector c4-conn"></div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-icon">☁️</span>
+          <span class="phase-title">인프라 & AWS</span>
+          <span class="phase-sub">Aug 2026</span>
+        </div>
+        <div class="topics">
+          <div class="topic"><div class="topic-dot c4-dot"></div>Docker & Dockerfile 실습</div>
+          <div class="topic"><div class="topic-dot c4-dot"></div>Kubernetes Pod / Deployment / Service</div>
+          <div class="topic"><div class="topic-dot c4-dot"></div>AWS EC2 / S3 / RDS 핵심</div>
+          <div class="topic"><div class="topic-dot c4-dot"></div>AWS SNS / SQS & Lambda</div>
+          <div class="topic"><div class="topic-dot c4-dot"></div>CI/CD (GitHub Actions)</div>
+          <div class="topic"><div class="topic-dot c4-dot"></div>Prometheus + Grafana 모니터링</div>
+          <div class="topic"><div class="topic-dot c4-dot"></div>구조화 로그 & ELK Stack</div>
+          <div class="topic"><div class="topic-dot c4-dot"></div>분산 추적 & OpenTelemetry</div>
+        </div>
+        <div class="xp-bar-wrap">
+          <span class="xp-label">목표 XP</span>
+          <div class="xp-bar"><div class="xp-fill c4-fill" style="width:100%"></div></div>
+          <span class="xp-value" style="color:#f78166">+140 XP → Lv.5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 5 -->
+    <div class="phase">
+      <div class="phase-left">
+        <div class="month-badge c5">5월차</div>
+        <div class="phase-connector c5-conn"></div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-icon">⚡</span>
+          <span class="phase-title">고급 패턴 & 보안 & AI</span>
+          <span class="phase-sub">Sep 2026</span>
+        </div>
+        <div class="topics">
+          <div class="topic"><div class="topic-dot c5-dot"></div>동시성 & Race Condition & Lock</div>
+          <div class="topic"><div class="topic-dot c5-dot"></div>Optimistic vs Pessimistic Lock</div>
+          <div class="topic"><div class="topic-dot c5-dot"></div>분산 락 (Redisson)</div>
+          <div class="topic"><div class="topic-dot c5-dot"></div>Circuit Breaker (Resilience4j)</div>
+          <div class="topic"><div class="topic-dot c5-dot"></div>Retry & Exponential Backoff</div>
+          <div class="topic"><div class="topic-dot c5-dot"></div>Rate Limiting 전략</div>
+          <div class="topic"><div class="topic-dot c5-dot"></div>OAuth2 & JWT 인증 흐름</div>
+          <div class="topic"><div class="topic-dot c5-dot"></div>AI 통합 (RAG & 벡터 DB)</div>
+        </div>
+        <div class="xp-bar-wrap">
+          <span class="xp-label">목표 XP</span>
+          <div class="xp-bar"><div class="xp-fill c5-fill" style="width:100%"></div></div>
+          <span class="xp-value" style="color:#bc8cff">+160 XP → Lv.6</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 6 -->
+    <div class="phase">
+      <div class="phase-left">
+        <div class="month-badge c6">6월차</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-icon">🎯</span>
+          <span class="phase-title">면접 준비 & 포트폴리오</span>
+          <span class="phase-sub">Oct 2026</span>
+        </div>
+        <div class="topics">
+          <div class="topic"><div class="topic-dot c6-dot"></div>5개 회사 채용 공고 분석 & 갭 파악</div>
+          <div class="topic"><div class="topic-dot c6-dot"></div>예상 면접 질문 100선 답변 정리</div>
+          <div class="topic"><div class="topic-dot c6-dot"></div>미니 포트폴리오 프로젝트 완성</div>
+          <div class="topic"><div class="topic-dot c6-dot"></div>기술 블로그 정리 (외부 공개)</div>
+          <div class="topic"><div class="topic-dot c6-dot"></div>모의 면접 실전 연습</div>
+          <div class="topic"><div class="topic-dot c6-dot"></div>이력서 최종 다듬기</div>
+        </div>
+        <div class="xp-bar-wrap">
+          <span class="xp-label">목표 XP</span>
+          <div class="xp-bar"><div class="xp-fill c6-fill" style="width:100%"></div></div>
+          <span class="xp-value" style="color:#ff7b72">+200 XP → Lv.7</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 레벨 진행도 -->
+  <div class="level-summary">
+    <div class="section-title">레벨 진행도</div>
+    <div class="level-row">
+      <div class="level-node">
+        <div class="level-circle active">Lv.1</div>
+        <div class="level-label">현재<br>0 XP</div>
+      </div>
+      <div class="level-arrow">›</div>
+      <div class="level-node">
+        <div class="level-circle" style="border-color:#79c0ff44;color:#79c0ff88">Lv.2</div>
+        <div class="level-label">1개월<br>100 XP</div>
+      </div>
+      <div class="level-arrow">›</div>
+      <div class="level-node">
+        <div class="level-circle" style="border-color:#3fb95044;color:#3fb95088">Lv.3</div>
+        <div class="level-label">2개월<br>250 XP</div>
+      </div>
+      <div class="level-arrow">›</div>
+      <div class="level-node">
+        <div class="level-circle" style="border-color:#d2992244;color:#d2992288">Lv.4</div>
+        <div class="level-label">3개월<br>500 XP</div>
+      </div>
+      <div class="level-arrow">›</div>
+      <div class="level-node">
+        <div class="level-circle" style="border-color:#f7816644;color:#f7816688">Lv.5</div>
+        <div class="level-label">4개월<br>900 XP</div>
+      </div>
+      <div class="level-arrow">›</div>
+      <div class="level-node">
+        <div class="level-circle" style="border-color:#bc8cff44;color:#bc8cff88">Lv.6</div>
+        <div class="level-label">5개월<br>1,400 XP</div>
+      </div>
+      <div class="level-arrow">›</div>
+      <div class="level-node">
+        <div class="level-circle goal">Lv.7+</div>
+        <div class="level-label">6개월<br>취업 🎉</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 매일 루틴 -->
+  <div class="daily-routine">
+    <div class="routine-card">
+      <div class="routine-title">☀️ 아침 루틴 (30~60분)</div>
+      <div class="routine-item">오늘의 퀘스트 2~3개 선택</div>
+      <div class="routine-item">개념 학습 + 노트 정리</div>
+      <div class="routine-item">모르는 것 질문</div>
+    </div>
+    <div class="routine-card">
+      <div class="routine-title">🌙 저녁 루틴 (15분)</div>
+      <div class="routine-item">daily-log 작성 + XP 업데이트</div>
+      <div class="routine-item">profile.md 스탯 갱신</div>
+      <div class="routine-item">git push → GitHub 기록</div>
+    </div>
+  </div>
+
+</body>
+</html>
