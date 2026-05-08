@@ -1,1 +1,26 @@
-{"totalXP":0,"streak":0,"dayNumber":0,"lastStudyDate":null,"questsCompleted":0,"skills":{"java":0,"spring":0,"db":0,"kafka":0,"msa":0,"aws":0,"cs":0},"badges":[],"recentLogs":[]}
+{
+  "totalXP": 5,
+  "streak": 1,
+  "dayNumber": 1,
+  "lastStudyDate": "2026-05-09",
+  "questsCompleted": 1,
+  "skills": {
+    "java": 0,
+    "spring": 5,
+    "db": 0,
+    "kafka": 0,
+    "msa": 0,
+    "aws": 0,
+    "cs": 0
+  },
+  "badges": [
+    "🔥 첫 불꽃"
+  ],
+  "recentLogs": [
+    {
+      "date": "2026-05-09",
+      "topic": "@Transactional 전파 수준과 롤백",
+      "xp": 5
+    }
+  ]
+}
