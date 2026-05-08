@@ -1,11 +1,11 @@
 {
-  "totalXP": 5,
+  "totalXP": 20,
   "streak": 1,
   "dayNumber": 1,
   "lastStudyDate": "2026-05-09",
   "questsCompleted": 1,
   "skills": {
-    "java": 0,
+    "java": 15,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -17,6 +17,11 @@
     "🔥 첫 불꽃"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-09",
+      "topic": "JVM 동작 원리 및 GC",
+      "xp": 15
+    },
     {
       "date": "2026-05-09",
       "topic": "@Transactional 전파 수준과 롤백",
