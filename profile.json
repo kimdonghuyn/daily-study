@@ -1,11 +1,11 @@
 {
-  "totalXP": 28,
-  "streak": 1,
-  "dayNumber": 2,
-  "lastStudyDate": "2026-05-13",
-  "questsCompleted": 2,
+  "totalXP": 43,
+  "streak": 2,
+  "dayNumber": 3,
+  "lastStudyDate": "2026-05-14",
+  "questsCompleted": 3,
   "skills": {
-    "java": 23,
+    "java": 38,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -17,6 +17,11 @@
     "🔥 첫 불꽃"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-14",
+      "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
+      "xp": 15
+    },
     {
       "date": "2026-05-13",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
