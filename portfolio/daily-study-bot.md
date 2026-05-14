@@ -1,6 +1,6 @@
 # Daily Study Bot — 포트폴리오
 
-> 마지막 업데이트: 2026-05-13 | 누적 학습일: 2일 | 현재 레벨: Lv.1 (28 XP)
+> 마지막 업데이트: 2026-05-14 | 누적 학습일: 4일 | 현재 레벨: Lv.1 (48 XP)
 
 백엔드 개발자 취업 준비를 위한 **자동 학습 Slack 봇**.
 매일 AI가 오늘의 유형(개념/문제/면접 순환)에 맞는 질문 1개를 생성·발송하고, 답변의 정확도를 0~100점으로 채점해 XP를 부여합니다.
@@ -90,6 +90,10 @@ return { score: Number(parsed.score), feedback: String(parsed.feedback) };
 | 5 | UTC/KST 날짜 불일치 | `new Date().toISOString()`이 UTC 기준 | KST 오프셋 +9h 적용 통일 |
 | 6 | 이벤트 미수신 | OAuth 스코프 변경 후 앱 재설치 누락 | Slack 앱 Reinstall to Workspace |
 | 7 | AI 엔진 품질 이슈 | 무료 엔진(Gemini, Groq) 피드백 정확도 부족 | Claude Haiku 4.5로 회귀 |
+| 8 | morning.yml STUDY_GITHUB_TOKEN 누락 | 워크플로우에 시크릿 미전달 → 항상 Lv.1/Day 0 fallback | afternoon.yml 참고해 시크릿 추가 |
+| 9 | ANTHROPIC_API_KEY 빈 값 | Vercel CLI `vercel env pull`이 값을 `""`로 덮어씀 | .env에 실제 키 직접 입력 |
+| 10 | 로컬 GITHUB_TOKEN 미설정 | .env에 항목 자체가 없었음 | GITHUB_TOKEN / STUDY_GITHUB_TOKEN 두 항목 직접 추가 |
+| 11 | STUDY_GITHUB_TOKEN 401 (Actions) | Fine-grained token이 daily-study 레포 미포함 | Classic token (repo 전체 권한)으로 재발급 후 시크릿 업데이트 |
 
 ---
 
@@ -110,11 +114,11 @@ return { score: Number(parsed.score), feedback: String(parsed.feedback) };
 
 | 항목 | 값 |
 |------|-----|
-| 누적 학습일 | 2일 |
+| 누적 학습일 | 4일 |
 | 현재 레벨 | Lv.1 |
-| 총 XP | 28 |
-| 연속 학습 | 1일 |
-| 완료 퀘스트 | 2개 |
+| 총 XP | 48 |
+| 연속 학습 | 2일 |
+| 완료 퀘스트 | 4개 |
 | 획득 뱃지 | 🔥 첫 불꽃 |
 
 > 이 문서는 [daily-study-bot](https://github.com/kimdonghuyn/daily-study-bot)이 매일 13:00 KST에 자동으로 업데이트합니다.
