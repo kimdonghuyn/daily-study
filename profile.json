@@ -1,11 +1,11 @@
 {
-  "totalXP": 43,
+  "totalXP": 48,
   "streak": 2,
-  "dayNumber": 3,
+  "dayNumber": 4,
   "lastStudyDate": "2026-05-14",
-  "questsCompleted": 3,
+  "questsCompleted": 4,
   "skills": {
-    "java": 38,
+    "java": 43,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -17,6 +17,11 @@
     "🔥 첫 불꽃"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-14",
+      "topic": "GC의 필요성과 동작 원리",
+      "xp": 5
+    },
     {
       "date": "2026-05-14",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
