@@ -1,11 +1,11 @@
 {
-  "totalXP": 48,
-  "streak": 2,
-  "dayNumber": 4,
-  "lastStudyDate": "2026-05-14",
-  "questsCompleted": 4,
+  "totalXP": 63,
+  "streak": 3,
+  "dayNumber": 5,
+  "lastStudyDate": "2026-05-15",
+  "questsCompleted": 5,
   "skills": {
-    "java": 43,
+    "java": 48,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -14,9 +14,15 @@
     "cs": 0
   },
   "badges": [
-    "🔥 첫 불꽃"
+    "🔥 첫 불꽃",
+    "📅 3일 연속"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-15",
+      "topic": "GC의 필요성과 동작 원리",
+      "xp": 15
+    },
     {
       "date": "2026-05-14",
       "topic": "GC의 필요성과 동작 원리",
