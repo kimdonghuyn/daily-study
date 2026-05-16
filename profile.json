@@ -1,11 +1,11 @@
 {
-  "totalXP": 63,
-  "streak": 3,
-  "dayNumber": 5,
-  "lastStudyDate": "2026-05-15",
-  "questsCompleted": 5,
+  "totalXP": 68,
+  "streak": 4,
+  "dayNumber": 6,
+  "lastStudyDate": "2026-05-16",
+  "questsCompleted": 6,
   "skills": {
-    "java": 48,
+    "java": 53,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -18,6 +18,11 @@
     "📅 3일 연속"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-16",
+      "topic": "GC의 필요성과 동작 원리",
+      "xp": 5
+    },
     {
       "date": "2026-05-15",
       "topic": "GC의 필요성과 동작 원리",
