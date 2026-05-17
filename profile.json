@@ -1,11 +1,11 @@
 {
-  "totalXP": 68,
-  "streak": 4,
-  "dayNumber": 6,
-  "lastStudyDate": "2026-05-16",
-  "questsCompleted": 6,
+  "totalXP": 73,
+  "streak": 5,
+  "dayNumber": 7,
+  "lastStudyDate": "2026-05-17",
+  "questsCompleted": 7,
   "skills": {
-    "java": 53,
+    "java": 58,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -18,6 +18,11 @@
     "📅 3일 연속"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-17",
+      "topic": "GC 알고리즘 종류 (Serial, G1, ZGC)",
+      "xp": 5
+    },
     {
       "date": "2026-05-16",
       "topic": "GC의 필요성과 동작 원리",
@@ -47,11 +52,6 @@
       "date": "2026-05-09",
       "topic": "JVM 동작 원리 및 GC",
       "xp": 15
-    },
-    {
-      "date": "2026-05-09",
-      "topic": "@Transactional 전파 수준과 롤백",
-      "xp": 5
     }
   ]
 }
