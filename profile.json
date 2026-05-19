@@ -1,11 +1,11 @@
 {
-  "totalXP": 78,
-  "streak": 6,
-  "dayNumber": 8,
-  "lastStudyDate": "2026-05-18",
-  "questsCompleted": 8,
+  "totalXP": 113,
+  "streak": 7,
+  "dayNumber": 9,
+  "lastStudyDate": "2026-05-19",
+  "questsCompleted": 9,
   "skills": {
-    "java": 63,
+    "java": 68,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -15,9 +15,16 @@
   },
   "badges": [
     "🔥 첫 불꽃",
-    "📅 3일 연속"
+    "📅 3일 연속",
+    "💪 일주일 전사",
+    "🚀 취준생의 각오"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-19",
+      "topic": "GC 알고리즘 종류 (Serial, G1, ZGC)",
+      "xp": 35
+    },
     {
       "date": "2026-05-18",
       "topic": "GC 알고리즘 종류 (Serial, G1, ZGC)",
@@ -47,11 +54,6 @@
       "date": "2026-05-14",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
       "xp": 15
-    },
-    {
-      "date": "2026-05-13",
-      "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
-      "xp": 8
     }
   ]
 }
