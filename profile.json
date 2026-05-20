@@ -1,11 +1,11 @@
 {
-  "totalXP": 118,
+  "totalXP": 133,
   "streak": 8,
   "dayNumber": 10,
   "lastStudyDate": "2026-05-20",
   "questsCompleted": 10,
   "skills": {
-    "java": 73,
+    "java": 88,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -20,6 +20,11 @@
     "🚀 취준생의 각오"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-20",
+      "topic": "캡슐화와 접근 제어자",
+      "xp": 15
+    },
     {
       "date": "2026-05-20",
       "topic": "캡슐화와 접근 제어자",
@@ -49,11 +54,6 @@
       "date": "2026-05-15",
       "topic": "GC의 필요성과 동작 원리",
       "xp": 15
-    },
-    {
-      "date": "2026-05-14",
-      "topic": "GC의 필요성과 동작 원리",
-      "xp": 5
     }
   ]
 }
