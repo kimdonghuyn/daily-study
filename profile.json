@@ -1,11 +1,11 @@
 {
-  "totalXP": 156,
-  "streak": 2,
-  "dayNumber": 14,
-  "lastStudyDate": "2026-05-24",
-  "questsCompleted": 14,
+  "totalXP": 171,
+  "streak": 3,
+  "dayNumber": 15,
+  "lastStudyDate": "2026-05-25",
+  "questsCompleted": 15,
   "skills": {
-    "java": 111,
+    "java": 116,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -20,6 +20,11 @@
     "🚀 취준생의 각오"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-25",
+      "topic": "상속과 다형성",
+      "xp": 15
+    },
     {
       "date": "2026-05-24",
       "topic": "상속과 다형성",
@@ -49,11 +54,6 @@
       "date": "2026-05-20",
       "topic": "캡슐화와 접근 제어자",
       "xp": 5
-    },
-    {
-      "date": "2026-05-19",
-      "topic": "GC 알고리즘 종류 (Serial, G1, ZGC)",
-      "xp": 35
     }
   ]
 }
