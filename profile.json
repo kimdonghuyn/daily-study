@@ -1,11 +1,11 @@
 {
-  "totalXP": 176,
-  "streak": 4,
-  "dayNumber": 16,
-  "lastStudyDate": "2026-05-26",
-  "questsCompleted": 16,
+  "totalXP": 181,
+  "streak": 5,
+  "dayNumber": 17,
+  "lastStudyDate": "2026-05-27",
+  "questsCompleted": 17,
   "skills": {
-    "java": 121,
+    "java": 126,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-27",
+      "topic": "추상화 — 인터페이스 vs 추상클래스",
+      "xp": 5
+    },
     {
       "date": "2026-05-26",
       "topic": "추상화 — 인터페이스 vs 추상클래스",
@@ -50,11 +55,6 @@
       "date": "2026-05-20",
       "topic": "캡슐화와 접근 제어자",
       "xp": 8
-    },
-    {
-      "date": "2026-05-20",
-      "topic": "캡슐화와 접근 제어자",
-      "xp": 15
     }
   ]
 }
