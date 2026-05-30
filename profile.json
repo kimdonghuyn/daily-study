@@ -1,11 +1,11 @@
 {
-  "totalXP": 221,
-  "streak": 7,
-  "dayNumber": 19,
-  "lastStudyDate": "2026-05-29",
-  "questsCompleted": 19,
+  "totalXP": 226,
+  "streak": 8,
+  "dayNumber": 20,
+  "lastStudyDate": "2026-05-30",
+  "questsCompleted": 20,
   "skills": {
-    "java": 136,
+    "java": 141,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-05-30",
+      "topic": "SOLID — SRP와 OCP",
+      "xp": 5
+    },
     {
       "date": "2026-05-29",
       "topic": "SOLID — SRP와 OCP",
@@ -48,11 +53,6 @@
     },
     {
       "date": "2026-05-24",
-      "topic": "상속과 다형성",
-      "xp": 5
-    },
-    {
-      "date": "2026-05-23",
       "topic": "상속과 다형성",
       "xp": 5
     }
