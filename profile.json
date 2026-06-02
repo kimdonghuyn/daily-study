@@ -1,11 +1,11 @@
 {
-  "totalXP": 236,
-  "streak": 10,
-  "dayNumber": 22,
-  "lastStudyDate": "2026-06-01",
-  "questsCompleted": 22,
+  "totalXP": 241,
+  "streak": 11,
+  "dayNumber": 23,
+  "lastStudyDate": "2026-06-02",
+  "questsCompleted": 23,
   "skills": {
-    "java": 151,
+    "java": 156,
     "spring": 5,
     "db": 0,
     "kafka": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-02",
+      "topic": "SOLID — LSP, ISP, DIP",
+      "xp": 5
+    },
     {
       "date": "2026-06-01",
       "topic": "SOLID — LSP, ISP, DIP",
@@ -48,11 +53,6 @@
     },
     {
       "date": "2026-05-27",
-      "topic": "추상화 — 인터페이스 vs 추상클래스",
-      "xp": 5
-    },
-    {
-      "date": "2026-05-26",
       "topic": "추상화 — 인터페이스 vs 추상클래스",
       "xp": 5
     }
