@@ -1,12 +1,12 @@
 {
-  "totalXP": 251,
-  "streak": 13,
-  "dayNumber": 25,
-  "lastStudyDate": "2026-06-04",
-  "questsCompleted": 25,
+  "totalXP": 256,
+  "streak": 14,
+  "dayNumber": 26,
+  "lastStudyDate": "2026-06-05",
+  "questsCompleted": 26,
   "skills": {
     "java": 161,
-    "spring": 10,
+    "spring": 15,
     "db": 0,
     "kafka": 0,
     "msa": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-05",
+      "topic": "IoC와 DI — 왜 직접 객체를 만들지 않나",
+      "xp": 5
+    },
     {
       "date": "2026-06-04",
       "topic": "IoC와 DI — 왜 직접 객체를 만들지 않나",
@@ -50,11 +55,6 @@
       "date": "2026-05-30",
       "topic": "SOLID — SRP와 OCP",
       "xp": 5
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "SOLID — SRP와 OCP",
-      "xp": 35
     }
   ]
 }
