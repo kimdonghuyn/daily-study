@@ -1,12 +1,12 @@
 {
-  "totalXP": 266,
-  "streak": 16,
-  "dayNumber": 28,
-  "lastStudyDate": "2026-06-07",
-  "questsCompleted": 28,
+  "totalXP": 271,
+  "streak": 17,
+  "dayNumber": 29,
+  "lastStudyDate": "2026-06-08",
+  "questsCompleted": 29,
   "skills": {
     "java": 161,
-    "spring": 25,
+    "spring": 30,
     "db": 0,
     "kafka": 0,
     "msa": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-08",
+      "topic": "Spring Bean 생명주기와 스코프",
+      "xp": 5
+    },
     {
       "date": "2026-06-07",
       "topic": "Spring Bean 생명주기와 스코프",
@@ -48,11 +53,6 @@
     },
     {
       "date": "2026-06-02",
-      "topic": "SOLID — LSP, ISP, DIP",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-01",
       "topic": "SOLID — LSP, ISP, DIP",
       "xp": 5
     }
