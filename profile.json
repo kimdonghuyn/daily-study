@@ -1,12 +1,12 @@
 {
-  "totalXP": 276,
-  "streak": 18,
-  "dayNumber": 30,
-  "lastStudyDate": "2026-06-09",
-  "questsCompleted": 30,
+  "totalXP": 281,
+  "streak": 19,
+  "dayNumber": 31,
+  "lastStudyDate": "2026-06-10",
+  "questsCompleted": 31,
   "skills": {
     "java": 161,
-    "spring": 35,
+    "spring": 40,
     "db": 0,
     "kafka": 0,
     "msa": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-10",
+      "topic": "Spring AOP — 어떤 문제를 해결하나",
+      "xp": 5
+    },
     {
       "date": "2026-06-09",
       "topic": "Spring Bean 생명주기와 스코프",
@@ -49,11 +54,6 @@
     {
       "date": "2026-06-04",
       "topic": "IoC와 DI — 왜 직접 객체를 만들지 않나",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-03",
-      "topic": "SOLID — LSP, ISP, DIP",
       "xp": 5
     }
   ]
