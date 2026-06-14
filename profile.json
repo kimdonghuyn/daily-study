@@ -1,12 +1,12 @@
 {
-  "totalXP": 304,
-  "streak": 22,
-  "dayNumber": 35,
-  "lastStudyDate": "2026-06-13",
-  "questsCompleted": 35,
+  "totalXP": 309,
+  "streak": 23,
+  "dayNumber": 36,
+  "lastStudyDate": "2026-06-14",
+  "questsCompleted": 36,
   "skills": {
     "java": 161,
-    "spring": 63,
+    "spring": 68,
     "db": 0,
     "kafka": 0,
     "msa": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-14",
+      "topic": "프록시 패턴과 AOP 내부 동작 원리",
+      "xp": 5
+    },
     {
       "date": "2026-06-13",
       "topic": "프록시 패턴과 AOP 내부 동작 원리",
@@ -48,11 +53,6 @@
     },
     {
       "date": "2026-06-09",
-      "topic": "Spring Bean 생명주기와 스코프",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-08",
       "topic": "Spring Bean 생명주기와 스코프",
       "xp": 5
     }
