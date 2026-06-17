@@ -1,12 +1,12 @@
 {
-  "totalXP": 10,
+  "totalXP": 21,
   "streak": 1,
   "dayNumber": 1,
   "lastStudyDate": "2026-06-17",
-  "questsCompleted": 1,
+  "questsCompleted": 2,
   "skills": {
     "java": 10,
-    "spring": 0,
+    "spring": 11,
     "db": 0,
     "kafka": 0,
     "msa": 0,
@@ -17,6 +17,11 @@
     "🔥 첫 불꽃"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-17",
+      "topic": "@Transactional 기본 동작",
+      "xp": 11
+    },
     {
       "date": "2026-06-17",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
