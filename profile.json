@@ -1,60 +1,18 @@
 {
-  "totalXP": 319,
-  "streak": 25,
-  "dayNumber": 38,
-  "lastStudyDate": "2026-06-16",
-  "questsCompleted": 38,
+  "totalXP": 0,
+  "streak": 0,
+  "dayNumber": 0,
+  "lastStudyDate": null,
+  "questsCompleted": 0,
   "skills": {
-    "java": 161,
-    "spring": 78,
+    "java": 0,
+    "spring": 0,
     "db": 0,
     "kafka": 0,
     "msa": 0,
     "aws": 0,
     "cs": 0
   },
-  "badges": [
-    "🔥 첫 불꽃",
-    "📅 3일 연속",
-    "💪 일주일 전사",
-    "🚀 취준생의 각오",
-    "☕ Java 견습생"
-  ],
-  "recentLogs": [
-    {
-      "date": "2026-06-16",
-      "topic": "@Transactional 기본 동작",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-15",
-      "topic": "@Transactional 기본 동작",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-14",
-      "topic": "프록시 패턴과 AOP 내부 동작 원리",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-13",
-      "topic": "프록시 패턴과 AOP 내부 동작 원리",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-12",
-      "topic": "프록시 패턴과 AOP 내부 동작 원리",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-11",
-      "topic": "Spring AOP — 어떤 문제를 해결하나",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-10",
-      "topic": "Spring AOP — 어떤 문제를 해결하나",
-      "xp": 8
-    }
-  ]
+  "badges": [],
+  "recentLogs": []
 }
