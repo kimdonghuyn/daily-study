@@ -1,11 +1,11 @@
 {
-  "totalXP": 0,
-  "streak": 0,
-  "dayNumber": 0,
-  "lastStudyDate": null,
-  "questsCompleted": 0,
+  "totalXP": 10,
+  "streak": 1,
+  "dayNumber": 1,
+  "lastStudyDate": "2026-06-17",
+  "questsCompleted": 1,
   "skills": {
-    "java": 0,
+    "java": 10,
     "spring": 0,
     "db": 0,
     "kafka": 0,
@@ -13,6 +13,14 @@
     "aws": 0,
     "cs": 0
   },
-  "badges": [],
-  "recentLogs": []
+  "badges": [
+    "🔥 첫 불꽃"
+  ],
+  "recentLogs": [
+    {
+      "date": "2026-06-17",
+      "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
+      "xp": 10
+    }
+  ]
 }
