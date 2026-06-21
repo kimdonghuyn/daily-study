@@ -1,11 +1,11 @@
 {
-  "totalXP": 57,
-  "streak": 4,
+  "totalXP": 62,
+  "streak": 5,
   "dayNumber": 1,
-  "lastStudyDate": "2026-06-20",
+  "lastStudyDate": "2026-06-21",
   "questsCompleted": 4,
   "skills": {
-    "java": 36,
+    "java": 41,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -18,6 +18,11 @@
     "📅 3일 연속"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-21",
+      "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
+      "xp": 5
+    },
     {
       "date": "2026-06-20",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
