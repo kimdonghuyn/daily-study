@@ -1,11 +1,11 @@
 {
-  "totalXP": 107,
-  "streak": 8,
+  "totalXP": 112,
+  "streak": 9,
   "dayNumber": 1,
-  "lastStudyDate": "2026-06-24",
+  "lastStudyDate": "2026-06-25",
   "questsCompleted": 4,
   "skills": {
-    "java": 56,
+    "java": 61,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -20,6 +20,11 @@
     "🚀 취준생의 각오"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-25",
+      "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
+      "xp": 5
+    },
     {
       "date": "2026-06-24",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
@@ -49,11 +54,6 @@
       "date": "2026-06-19",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
       "xp": 22
-    },
-    {
-      "date": "2026-06-18",
-      "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
-      "xp": 9
     }
   ]
 }
