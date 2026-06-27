@@ -1,11 +1,11 @@
 {
-  "totalXP": 132,
-  "streak": 10,
+  "totalXP": 137,
+  "streak": 11,
   "dayNumber": 2,
-  "lastStudyDate": "2026-06-26",
+  "lastStudyDate": "2026-06-27",
   "questsCompleted": 5,
   "skills": {
-    "java": 81,
+    "java": 86,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -20,6 +20,11 @@
     "🚀 취준생의 각오"
   ],
   "recentLogs": [
+    {
+      "date": "2026-06-27",
+      "topic": "캡슐화와 접근 제어자",
+      "xp": 5
+    },
     {
       "date": "2026-06-26",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
@@ -47,11 +52,6 @@
     },
     {
       "date": "2026-06-22",
-      "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-21",
       "topic": "JVM 메모리 구조 (Heap, Stack, Method Area)",
       "xp": 5
     }
