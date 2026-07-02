@@ -1,11 +1,11 @@
 {
-  "totalXP": 183,
-  "streak": 16,
-  "dayNumber": 3,
-  "lastStudyDate": "2026-07-01",
-  "questsCompleted": 6,
+  "totalXP": 193,
+  "streak": 17,
+  "dayNumber": 4,
+  "lastStudyDate": "2026-07-02",
+  "questsCompleted": 7,
   "skills": {
-    "java": 132,
+    "java": 142,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-07-02",
+      "topic": "상속과 다형성",
+      "xp": 10
+    },
     {
       "date": "2026-07-02",
       "topic": "캡슐화와 접근 제어자",
@@ -48,11 +53,6 @@
     },
     {
       "date": "2026-06-28",
-      "topic": "캡슐화와 접근 제어자",
-      "xp": 5
-    },
-    {
-      "date": "2026-06-27",
       "topic": "캡슐화와 접근 제어자",
       "xp": 5
     }
