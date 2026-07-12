@@ -1,11 +1,11 @@
 {
-  "totalXP": 259,
-  "streak": 26,
+  "totalXP": 264,
+  "streak": 27,
   "dayNumber": 4,
-  "lastStudyDate": "2026-07-11",
+  "lastStudyDate": "2026-07-12",
   "questsCompleted": 8,
   "skills": {
-    "java": 208,
+    "java": 213,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -21,6 +21,11 @@
     "☕ Java 견습생"
   ],
   "recentLogs": [
+    {
+      "date": "2026-07-12",
+      "topic": "상속과 다형성",
+      "xp": 5
+    },
     {
       "date": "2026-07-11",
       "topic": "상속과 다형성",
@@ -50,11 +55,6 @@
       "date": "2026-07-07",
       "topic": "상속과 다형성",
       "xp": 5
-    },
-    {
-      "date": "2026-07-06",
-      "topic": "상속과 다형성",
-      "xp": 11
     }
   ]
 }
