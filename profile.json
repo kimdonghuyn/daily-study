@@ -1,11 +1,11 @@
 {
-  "totalXP": 414,
-  "streak": 37,
+  "totalXP": 419,
+  "streak": 38,
   "dayNumber": 4,
-  "lastStudyDate": "2026-07-22",
+  "lastStudyDate": "2026-07-23",
   "questsCompleted": 8,
   "skills": {
-    "java": 263,
+    "java": 268,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -22,6 +22,11 @@
     "🗓️ 한 달의 습관"
   ],
   "recentLogs": [
+    {
+      "date": "2026-07-23",
+      "topic": "상속과 다형성",
+      "xp": 5
+    },
     {
       "date": "2026-07-22",
       "topic": "상속과 다형성",
@@ -49,11 +54,6 @@
     },
     {
       "date": "2026-07-17",
-      "topic": "상속과 다형성",
-      "xp": 5
-    },
-    {
-      "date": "2026-07-16",
       "topic": "상속과 다형성",
       "xp": 5
     }
