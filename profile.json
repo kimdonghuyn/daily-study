@@ -1,11 +1,11 @@
 {
-  "totalXP": 499,
-  "streak": 54,
+  "totalXP": 504,
+  "streak": 55,
   "dayNumber": 4,
-  "lastStudyDate": "2026-08-08",
+  "lastStudyDate": "2026-08-09",
   "questsCompleted": 8,
   "skills": {
-    "java": 348,
+    "java": 353,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -19,9 +19,15 @@
     "💪 일주일 전사",
     "🚀 취준생의 각오",
     "☕ Java 견습생",
-    "🗓️ 한 달의 습관"
+    "🗓️ 한 달의 습관",
+    "💎 꾸준함의 증거"
   ],
   "recentLogs": [
+    {
+      "date": "2026-08-09",
+      "topic": "상속과 다형성",
+      "xp": 5
+    },
     {
       "date": "2026-08-08",
       "topic": "상속과 다형성",
@@ -49,11 +55,6 @@
     },
     {
       "date": "2026-08-03",
-      "topic": "상속과 다형성",
-      "xp": 5
-    },
-    {
-      "date": "2026-08-02",
       "topic": "상속과 다형성",
       "xp": 5
     }
