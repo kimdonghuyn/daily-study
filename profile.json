@@ -1,11 +1,11 @@
 {
-  "totalXP": 524,
-  "streak": 59,
+  "totalXP": 529,
+  "streak": 60,
   "dayNumber": 4,
-  "lastStudyDate": "2026-08-13",
+  "lastStudyDate": "2026-08-14",
   "questsCompleted": 8,
   "skills": {
-    "java": 373,
+    "java": 378,
     "spring": 11,
     "db": 0,
     "kafka": 0,
@@ -23,6 +23,11 @@
     "💎 꾸준함의 증거"
   ],
   "recentLogs": [
+    {
+      "date": "2026-08-14",
+      "topic": "상속과 다형성",
+      "xp": 5
+    },
     {
       "date": "2026-08-13",
       "topic": "상속과 다형성",
@@ -50,11 +55,6 @@
     },
     {
       "date": "2026-08-08",
-      "topic": "상속과 다형성",
-      "xp": 5
-    },
-    {
-      "date": "2026-08-07",
       "topic": "상속과 다형성",
       "xp": 5
     }
